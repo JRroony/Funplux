@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>HTML page</h1>
+        <h1 id = "pass">Served with nodejs</h1>
+		<input type = "search" id="mySearch">
+		<script>
+			function myfunction() {
+				if(document.getElementById("mySearch").value == "100 Thieves"){
+					document.getElementById("pass").textContent = "100 Thieves";
+				}
+				else if (document.getElementById("mySearch").value == "Cloud9"){
+					document.getElementById("pass").textContent = "Cloud 9";
+				}
+				else if (document.getElementById("mySearch").value == "Clutch Gaming"){
+					document.getElementById("pass").textContent = "Clutch Gaming";
+				}
+				else if (document.getElementById("mySearch").value == "CLG"){
+					document.getElementById("pass").textContent = "CLG";
+				}
+				else if (document.getElementById("mySearch").value == "Echo Fox"){
+					document.getElementById("pass").textContent = "Echo Fox";
+				}
+				else if (document.getElementById("mySearch").value == "FlyQuest"){
+					document.getElementById("pass").textContent = "FlyQuest";
+				}
+				else if (document.getElementById("mySearch").value == "Golden Guardians"){
+					document.getElementById("pass").textContent = "Golden Guardians";
+				}
+				else if (document.getElementById("mySearch").value == "OpTic Gaming"){
+					document.getElementById("pass").textContent = "OpTic Gaming";
+				}
+				else if (document.getElementById("mySearch").value == "TSM"){
+					document.getElementById("pass").textContent = "Team SoloMid";
+				}else{
+					document.getElementById("pass").textContent = "Team Not Found";
+				}
+			}
+		</script>
+	<button type="button" onclick="myfunction()">Click!</button>
+	</body>
+</html>

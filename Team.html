@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <link rel="stylesheet" type="text/css" href="teamstyle.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="#home" onclick="window.location.href = 'index.html';">Home</a>
+    <a href="#champion" onclick="window.location.href = 'temp1.html';">Champion</a>
+    <a href="#team" onclick = "window.location.href = 'Team.html';">Strategy</a>
+    <a href="#contact">Contact</a>
+</div>
+<div class="header">
+    <form>
+        <h1>Find a Strategy</h1>
+        <div class="form-box">
+            <input class="search-field team" name = "searchteam" type="text" placeholder="Team Name"/>
+            <button class="search-btn" type="button">Search</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

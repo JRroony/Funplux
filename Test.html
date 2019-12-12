@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>First name
+        <th>Last name
+        <th>Job title
+    </tr>
+
+    <tbody id="data"></tbody>
+</table>
+<script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET","data.php",true);
+    ajax.send();
+    ajax.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+        }
+    }
+</script>
+</body>
+</html>

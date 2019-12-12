@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:color="http://www.w3.org/1999/xhtml" xmlns:height="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Funplux</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="topnav">
+        <a class="active" href="#home" onclick="window.location.href = 'index.html';">Home</a>
+        <a href="#champion" onclick="window.location.href = 'temp1.html';">Champion</a>
+        <a href="#team" onclick = "window.location.href = 'Team.html';">Strategy</a>
+        <a href="#contact" onclick="window.location.href ='TTTT.html';">Contact</a>
+    </div>
+    <div style="padding-left:16px">
+    </div>
+        <div class="header">
+            <form>
+                <h1> Find a <span>Team</span></h1>
+                <div class="form-box">
+                    <input class="search-field skills" name="search" type="text" placeholder="Team Name" id = "mySearch"/>
+<!--                    <input class="search-field location" name="location" type="text" placeholder="Team Name"/>-->
+                    <button class="search-btn" type="button" onclick="myfunction()">Search</button>
+                    <button class="search-btn2" id = "pass" type="button" onclick="helper(this);">Team</button>
+                </div>
+            </form>
+        </div>
+    <script>
+        function myfunction() {
+            if(document.getElementById("mySearch").value == "100 Thieves"){
+                document.getElementById("pass").textContent = "100 Thieves";
+            }
+            else if (document.getElementById("mySearch").value == "Cloud9"){
+                document.getElementById("pass").textContent = "Cloud 9";
+            }
+            else if (document.getElementById("mySearch").value == "Clutch Gaming"){
+                document.getElementById("pass").textContent = "Clutch Gaming";
+            }
+            else if (document.getElementById("mySearch").value == "CLG"){
+                document.getElementById("pass").textContent = "CLG";
+            }
+            else if (document.getElementById("mySearch").value == "Echo Fox"){
+                document.getElementById("pass").textContent = "Echo Fox";
+            }
+            else if (document.getElementById("mySearch").value == "FlyQuest"){
+                document.getElementById("pass").textContent = "FlyQuest";
+            }
+            else if (document.getElementById("mySearch").value == "GGS"){
+                document.getElementById("pass").textContent = "GGS";
+            }
+            else if (document.getElementById("mySearch").value == "OpTic Gaming"){
+                document.getElementById("pass").textContent = "OpTic Gaming";
+            }
+            else if (document.getElementById("mySearch").value == "TSM"){
+                document.getElementById("pass").textContent = "Team SoloMid";
+            }else{
+                document.getElementById("pass").textContent = "Team Not Found";
+            }
+        }
+        function helper(btn) {
+            if (document.getElementById("pass").textContent == "Team SoloMid"){
+                window.location.href =  'TSM.html';
+            }else if(document.getElementById("pass").textContent == "OpTic Gaming"){
+                window.location.href = 'OPT.html';
+            }else if(document.getElementById("pass").textContent == "GGS"){
+                window.location.href = 'GGS.html';
+            }else if(document.getElementById("pass").textContent == "FlyQuest"){
+                window.location.href = 'FlyQuest.html';
+            }else if(document.getElementById("pass").textContent == "Echo Fox"){
+                window.location.href = 'Fox.html';
+            }
+            else if(document.getElementById("pass").textContent == "CLG"){
+                window.location.href = 'CLG.html';
+            }
+            else if(document.getElementById("pass").textContent == "Clutch Gaming"){
+                window.location.href = 'Clutch.html';
+            }
+            else if(document.getElementById("pass").textContent == "Cloud 9"){
+                window.location.href = 'C9.html';
+            }else if(document.getElementById("pass").textContent == "100 Thieves"){
+                window.location.href = '100T.html';
+            }
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <style>-->
+<!--        * {-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+<!--        body {-->
+<!--            margin: 0;-->
+<!--            font-family: Arial;-->
+<!--            font-size: 17px;-->
+<!--        }-->
+<!--        #myVideo {-->
+<!--            position: fixed;-->
+<!--            right: 0;-->
+<!--            bottom: 0;-->
+<!--            min-width: 100%;-->
+<!--            min-height: 100%;-->
+<!--        }-->
+
+<!--        .content {-->
+<!--            position: fixed;-->
+<!--            bottom: 0;-->
+<!--            background: rgba(0, 0, 0, 0.5);-->
+<!--            color: #f1f1f1;-->
+<!--            width: 100%;-->
+<!--            padding: 20px;-->
+<!--        }-->
+
+<!--        #myBtn {-->
+<!--            width: 200px;-->
+<!--            font-size: 18px;-->
+<!--            padding: 10px;-->
+<!--            border: none;-->
+<!--            background: #000;-->
+<!--            color: #fff;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+
+<!--        #myBtn:hover {-->
+<!--            background: #ddd;-->
+<!--            color: black;-->
+<!--        }-->
+<!--        .header{-->
+<!--            height: 100vh;-->
+<!--            background-image: linear-gradient(rgba(0,0,0,0.7),-->
+<!--            rgba(0,0,0,0.7)),url(Worlds2019.jpg);-->
+<!--            background-size: cover;-->
+<!--            background-position: center;-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--            font-family: sans-serif;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<video autoplay muted loop id="myVideo">-->
+<!--    <source src="Awaken.mp4" type="video/mp4">-->
+<!--</video>-->
+
+<!--&lt;!&ndash;<div class="content">&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1>Heading</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;    <button id="myBtn" onclick="myFunction()">Pause</button>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div class="content">-->
+<!--    <form>-->
+<!--        <h1> Find a <span>Champion</span></h1>-->
+<!--        <div class="form-box">-->
+<!--            <input class="search-field skills" name="search" type="text" placeholder="Champion Name"/>-->
+<!--&lt;!&ndash;            <input class="search-field location" name="location" type="text" placeholder="Team Name"/>&ndash;&gt;-->
+<!--            <button class="search-btn" type="button" >Search</button>-->
+<!--            <button class="table-btn" type="button" onclick="window.location.href = 'Championtable.html';">Display Champion Table</button>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--</div>-->
+<!--<script>-->
+<!--    var video = document.getElementById("myVideo");-->
+<!--    var btn = document.getElementById("myBtn");-->
+
+<!--    function myFunction() {-->
+<!--        if (video.paused) {-->
+<!--            video.play();-->
+<!--            btn.innerHTML = "Pause";-->
+<!--        } else {-->
+<!--            video.pause();-->
+<!--            btn.innerHTML = "Play";-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        }
+        .header{
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),url(Worlds2019.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+    <source src="Awaken.mp4" type="video/mp4">
+</video>
+
+<!--<div class="content">-->
+<!--    <h1>Heading</h1>-->
+<!--    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>-->
+<!--    <button id="myBtn" onclick="myFunction()">Pause</button>-->
+<!--</div>-->
+<div class="content">
+    <form>
+        <h1> Funplux <span>Pro</span></h1>
+        <div class="form-box">
+            <form action="/Results" method="post">
+                Enter query (without semicolon, use '\' instead of spaces):<br>
+                <input type=text" name="query" size="75"/>
+                <input type="submit" value="Submit Query"/>
+            </form>
+        </div>
+    </form>
+</div>
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+</script>
+
+</body>
+</html>

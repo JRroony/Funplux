@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$servername = "server163.web-hosting.com";
+$username = "funpaxcg";
+$password = "Roony10cory10";
+$dbname = "funpaxcg_League";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT Champion_ID FROM `funpaxcg_League`.`Champion_Info`";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo "<br> id: ". $row["Champion_id"]. "<br>";
+}
+} else {
+echo "0 results";
+}
+
+$conn->close();
+?>
+
+</body>
+</html>
